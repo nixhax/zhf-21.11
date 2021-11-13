@@ -15,9 +15,10 @@ Zero Hydra Failure Hackathon
 
 От приходящего человека требуется иметь понимание Nix, и ноутбук с ним.
 
+У вас осталось <span id="there-is-time" color="red">(наверное) время</span>, чтобы прочитать [немного гайдов по Nix](https://nixos.org/learn.html).
+
 ## Место/Время
 *19 ноября, в |TO_BE_ANNOUNCED|*
-
 
 ## Как участвовать?
 ```nix
@@ -73,3 +74,16 @@ in
 
 ### Nix, Rust и микроконтроллеры
 Помигайте лампочкой, экраном на железке. Воспроизводимые носимые устройства!
+
+<script>
+        zhftimestamp = Date.UTC(2021, 10, 19)
+        setInterval(() => {
+
+            s = Math.ceil((zhftimestamp - Date.now()) / 1000)
+            m = Math.ceil(s / 60)
+            h = Math.ceil(m / 60)
+            d = Math.ceil(h / 24)
+            document.getElementById("there-is-time").textContent = "" + (d) + ":" + (h % 24) + ":" + (m % 60) + ":" + (s % 60);
+        }, 1000)
+
+</script>
