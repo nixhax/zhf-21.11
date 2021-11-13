@@ -111,7 +111,11 @@ in
 </script>
 
 <style>
-    ::content("Failure") {
-        rotate: 5deg;
+    /* So workshops and lectures have better visibility */
+    h3 {
+        color: #5be863;
+    }
+    h3::before {
+        content: ">> ";
     }
 </style>
