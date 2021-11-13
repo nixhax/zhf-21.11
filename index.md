@@ -1,5 +1,5 @@
 
-Zero Hydra Failure Hackathon
+Zero Hydra <span>Failure</span> Hackathon
 ====
 
 Дважды в год, в канун нового релиза NixOS, в Nixpkgs приходит ZHF. Все мейнтейнеры забывают былые распри и раздоры, и вместе уменьшают количество ошибок на Гидре.
@@ -16,6 +16,8 @@ Zero Hydra Failure Hackathon
 От приходящего человека требуется иметь понимание Nix, и ноутбук с ним.
 
 У вас осталось <span id="there-is-time" color="red">(наверное) время</span>, чтобы прочитать [немного гайдов по Nix](https://nixos.org/learn.html).
+
+Добавляйтесь [в наш уютный чат](https://t.me/ru_nixos)!
 
 ## Место/Время
 *19 ноября, в |TO_BE_ANNOUNCED|*
@@ -77,13 +79,39 @@ in
 
 <script>
         zhftimestamp = Date.UTC(2021, 10, 19)
-        setInterval(() => {
-
-            s = Math.ceil((zhftimestamp - Date.now()) / 1000)
+        getTimeLeft = () => {
+            delta = (zhftimestamp - Date.now())
+            if (delta <= 0) return "(нет)"
+            s = Math.ceil(delta / 1000)
             m = Math.ceil(s / 60)
             h = Math.ceil(m / 60)
             d = Math.ceil(h / 24)
-            document.getElementById("there-is-time").textContent = "" + (d) + ":" + (h % 24) + ":" + (m % 60) + ":" + (s % 60);
-        }, 1000)
+            format2 = (str) => ("" + str).length == 1 ? "0" + str : ("" + str)
+            document.getElementById("there-is-time").textContent = "" +
+                format2(d) + ":" +
+                format2(h % 24) + ":" +
+                format2(m % 60) + ":" +
+                format2(s % 60)
+        }
 
+        setInterval(() => {
+            time_left = document.getElementById("there-is-time")
+            time_left.textContent = getTimeLeft()
+            new Animation(
+                new KeyframeEffect(
+                    time_left, [
+                        { color: 'red', selector: 0.2},
+                        {selector: 1}
+                    ],
+                    { duration: 200 }
+                ),
+                document.timeline
+            ).play()
+        }, 1000)
 </script>
+
+<style>
+    ::content("Failure") {
+        rotate: 5deg;
+    }
+</style>
