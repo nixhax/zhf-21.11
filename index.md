@@ -87,7 +87,7 @@ in
             h = Math.ceil(m / 60)
             d = Math.ceil(h / 24)
             format2 = (str) => ("" + str).length == 1 ? "0" + str : ("" + str)
-            document.getElementById("there-is-time").textContent = "" +
+            return "" +
                 format2(d) + ":" +
                 format2(h % 24) + ":" +
                 format2(m % 60) + ":" +
