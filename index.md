@@ -17,7 +17,7 @@ Zero Hydra <span>Failure</span> Hackathon
 
 У вас осталось <span id="there-is-time" color="red">(наверное) время</span>, чтобы прочитать [немного гайдов по Nix](https://nixos.org/learn.html).
 
-Добавляйтесь [в наш уютный чат](https://t.me/ru_nixos)!
+Добавляйтесь [в уютный чат ru_nixos](https://t.me/ru_nixos), и в [чат координации](https://t.me/nixhax)!
 
 ## Место/Время
 *19 ноября, в |TO_BE_ANNOUNCED|*
