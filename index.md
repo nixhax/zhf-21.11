@@ -53,7 +53,7 @@ in
 
 Задача: поправить максимальное количество ошибок сборки на Гидре.
 
-Обсуждение в nixpkgs: https://github.com/NixOS/nixpkgs/issues/144627
+Обсуждение в nixpkgs: <https://github.com/NixOS/nixpkgs/issues/144627>
 
 #### Что делать?
 
