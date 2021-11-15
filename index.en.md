@@ -5,7 +5,7 @@ title: Zero Hydra Failure Hackathon
 Zero Hydra <span>Failure</span> Hackathon
 ====
 
-[По-русски](/zhf-21.11)
+[По-русски](/zhf-21.11/index.html)
 
 Twice a year, nixpkgs contributors unite to fix as many Hydra build failures as possible before the release.
 
@@ -27,7 +27,11 @@ Join our [coordination chat][nixhax]!
 
 Friday, Nov 19
 
-Moscow, *TBA*
+[undefspace][undefspace]
+
+[Moscow, Ulitsa Vorontsovo Pole, 5/7 building 8, entrance 1/Москва, Воронцово поле 5-7с8, подъезд 1][undefspace OSM]
+
+
 
 ## How to participate
 

@@ -28,7 +28,9 @@ Zero Hydra <span>Failure</span> Hackathon
 
 19 ноября, пятница
 
-Москва, *TBA*
+[undefspace][undefspace]
+
+[Москва, Воронцово поле 5-7с8, подъезд 1][undefspace OSM]
 
 ## Как участвовать?
 ```nix
