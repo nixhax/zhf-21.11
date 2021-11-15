@@ -36,6 +36,10 @@ in
 - @balsoft
 - @cab404
 
+### Remote
+
+- @ymatsiuk
+
 ----
 ## Лекции
 
