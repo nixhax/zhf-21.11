@@ -5,7 +5,7 @@ title: Zero Hydra Failure Hackathon
 Zero Hydra <span>Failure</span> Hackathon
 ====
 
-[По-русски](/)
+[По-русски](/zhf-21.11)
 
 Twice a year, nixpkgs contributors unite to fix as many Hydra build failures as possible before the release.
 

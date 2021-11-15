@@ -5,7 +5,7 @@ title: Zero Hydra Failure Hackathon
 Zero Hydra <span>Failure</span> Hackathon
 ====
 
-[English version](/index.en.html)
+[English version](/zhf-21.11/index.en.html)
 
 Дважды в год, в канун нового релиза NixOS, в Nixpkgs приходит ZHF. Все мейнтейнеры забывают былые распри и раздоры, и вместе уменьшают количество ошибок на Гидре.
 
