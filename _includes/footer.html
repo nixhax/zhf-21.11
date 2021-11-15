@@ -1,0 +1,42 @@
+<script>
+        zhftimestamp = Date.UTC(2021, 10, 19)
+        getTimeLeft = () => {
+            delta = (zhftimestamp - Date.now())
+            if (delta <= 0) return "(нет)"
+            s = Math.ceil(delta / 1000)
+            m = Math.ceil(s / 60)
+            h = Math.ceil(m / 60)
+            d = Math.ceil(h / 24)
+            format2 = (str) => ("" + str).length == 1 ? "0" + str : ("" + str)
+            return "" +
+                format2(d) + ":" +
+                format2(h % 24) + ":" +
+                format2(m % 60) + ":" +
+                format2(s % 60)
+        }
+
+        setInterval(() => {
+            time_left = document.getElementById("there-is-time")
+            time_left.textContent = getTimeLeft()
+            new Animation(
+                new KeyframeEffect(
+                    time_left, [
+                        { color: 'red', selector: 0.2},
+                        {selector: 1}
+                    ],
+                    { duration: 200 }
+                ),
+                document.timeline
+            ).play()
+        }, 1000)
+</script>
+
+<style>
+    /* So workshops and lectures have better visibility */
+    h3 {
+        color: #5be863;
+    }
+    h3::before {
+        content: ">> ";
+    }
+</style>

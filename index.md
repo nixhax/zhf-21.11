@@ -1,6 +1,11 @@
+---
+title: Zero Hydra Failure Hackathon
+---
 
 Zero Hydra <span>Failure</span> Hackathon
 ====
+
+[English version](/index.en.html)
 
 Дважды в год, в канун нового релиза NixOS, в Nixpkgs приходит ZHF. Все мейнтейнеры забывают былые распри и раздоры, и вместе уменьшают количество ошибок на Гидре.
 
@@ -15,12 +20,15 @@ Zero Hydra <span>Failure</span> Hackathon
 
 От приходящего человека требуется иметь понимание Nix, и ноутбук с ним.
 
-У вас осталось <span id="there-is-time" color="red">(наверное) время</span>, чтобы прочитать [немного гайдов по Nix](https://nixos.org/learn.html).
+У вас осталось <span id="there-is-time" color="red">(наверное) время</span>, чтобы прочитать [немного гайдов по Nix][learn].
 
-Добавляйтесь [в уютный чат ru_nixos](https://t.me/ru_nixos), и в [чат координации](https://t.me/nixhax)!
+Добавляйтесь [в уютный чат ru_nixos][ru_nixos], и в [чат координации][nixhax]!
 
 ## Место/Время
-*19 ноября, в |TO_BE_ANNOUNCED|*
+
+19 ноября, пятница
+
+Москва, *TBA*
 
 ## Как участвовать?
 ```nix
@@ -33,12 +41,7 @@ in
 
 ## Люди
 
-- @balsoft
-- @cab404
-
-### Remote
-
-- @ymatsiuk
+{% include people.md %}
 
 ----
 ## Лекции
@@ -53,11 +56,11 @@ in
 
 Задача: поправить максимальное количество ошибок сборки на Гидре.
 
-Обсуждение в nixpkgs: <https://github.com/NixOS/nixpkgs/issues/144627>
+[Обсуждение в nixpkgs][nixpkgs ZHF]
 
 #### Что делать?
 
-1. Зайти в [последнюю сборку пакетов nixpkgs](https://hydra.nixos.org/jobset/nixpkgs/trunk) или [последний прогон тестов NixOS](https://hydra.nixos.org/jobset/nixos/trunk-combined);
+1. Зайти в [последнюю сборку пакетов nixpkgs][trunk] или [последний прогон тестов NixOS][nixos tests];
 2. Найти там несобирающийся пакет или сломанный тест. Можно поискать те, что интересны вам, а можно взять первый попавшийся;
 3. (Не советуем пропускать!) Поискать, есть ли в nixpkgs PR, который исправляет проблему. Если он есть, то попробовать собрать, оставить соответствующее ревью, и GOTO 1;
 4. Если PR нет, то попробовать найти причину проблемы и исправить её;
@@ -81,45 +84,6 @@ in
 ### Nix, Rust и микроконтроллеры
 Помигайте лампочкой, экраном на железке. Воспроизводимые носимые устройства!
 
-<script>
-        zhftimestamp = Date.UTC(2021, 10, 19)
-        getTimeLeft = () => {
-            delta = (zhftimestamp - Date.now())
-            if (delta <= 0) return "(нет)"
-            s = Math.ceil(delta / 1000)
-            m = Math.ceil(s / 60)
-            h = Math.ceil(m / 60)
-            d = Math.ceil(h / 24)
-            format2 = (str) => ("" + str).length == 1 ? "0" + str : ("" + str)
-            return "" +
-                format2(d) + ":" +
-                format2(h % 24) + ":" +
-                format2(m % 60) + ":" +
-                format2(s % 60)
-        }
+{% include links.md %}
 
-        setInterval(() => {
-            time_left = document.getElementById("there-is-time")
-            time_left.textContent = getTimeLeft()
-            new Animation(
-                new KeyframeEffect(
-                    time_left, [
-                        { color: 'red', selector: 0.2},
-                        {selector: 1}
-                    ],
-                    { duration: 200 }
-                ),
-                document.timeline
-            ).play()
-        }, 1000)
-</script>
-
-<style>
-    /* So workshops and lectures have better visibility */
-    h3 {
-        color: #5be863;
-    }
-    h3::before {
-        content: ">> ";
-    }
-</style>
+{% include footer.html %}
