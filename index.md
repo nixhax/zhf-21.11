@@ -28,7 +28,7 @@ Zero Hydra <span>Failure</span> Hackathon
 
 [Приглашение в iCal][ical]
 
-19 ноября, пятница, 18:00–23:59 MSK ([iCal][ical])
+19 ноября, пятница, 18:00–23:59 MSK
 
 [undefspace][undefspace]
 
