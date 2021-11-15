@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//I wrote this by hand
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:Europe/Moscow
+LAST-MODIFIED:20201011T015911Z
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/Moscow
+X-LIC-LOCATION:Europe/Moscow
+BEGIN:STANDARD
+TZNAME:MSK
+TZOFFSETFROM:+0300
+TZOFFSETTO:+0300
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:zhf-21.11@nixhax.github.io
+DTSTAMP:20211115T000000Z
+DTSTART;TZID=Europe/Moscow:20211119T180000
+DTEND;TZID=Europe/Moscow:20211119T235959
+SUMMARY:Zero Hydra Failures Hackathon
+URL:https://nixhax.github.io/zhf-21.11/
+ORGANIZER;CN="Vladimir Serov":mailto:me@cab404.ru
+ORGANIZER;CN="Alexander Bantyev":mailto:balsoft@balsoft.ru
+LOCATION:undefspace (Москва, Воронцово поле 5-7с8, подъезд 1)
+GEO:55.7539751;37.6525056
+END:VEVENT
+END:VCALENDAR

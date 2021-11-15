@@ -6,3 +6,4 @@
 [nixos tests]: https://hydra.nixos.org/jobset/nixos/trunk-combined
 [undefspace]: https://undef.club
 [undefspace OSM]: https://www.openstreetmap.org/node/8266918002
+[ical]: https://nixhax.github.io/zhf-21.11/event.ics

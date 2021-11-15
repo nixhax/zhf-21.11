@@ -18,7 +18,7 @@ Zero Hydra <span>Failure</span> Hackathon
 
 ## Уровень
 
-От приходящего человека требуется иметь понимание Nix, и ноутбук с ним.
+От приходящего человека желательно иметь понимание Nix, и ноутбук с ним.
 
 У вас осталось <span id="there-is-time" color="red">(наверное) время</span>, чтобы прочитать [немного гайдов по Nix][learn].
 
@@ -26,7 +26,9 @@ Zero Hydra <span>Failure</span> Hackathon
 
 ## Место/Время
 
-19 ноября, пятница
+[Приглашение в iCal][ical]
+
+19 ноября, пятница, 18:00–23:59 MSK ([iCal][ical])
 
 [undefspace][undefspace]
 
