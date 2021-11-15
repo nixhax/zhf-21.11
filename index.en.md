@@ -28,6 +28,7 @@ Join our [coordination chat][nixhax]!
 [Event in iCal][ical]
 
 Friday, Nov 19, 18:00–23:59 MSK
+
 [undefspace][undefspace]
 
 [Moscow, Ulitsa Vorontsovo Pole, 5/7 building 8, entrance 1/Москва, Воронцово поле 5-7с8, подъезд 1][undefspace OSM]
