@@ -62,6 +62,11 @@ in
 
 [Обсуждение в nixpkgs][nixpkgs ZHF]
 
+Добавляйте в issues, pull requests и comments следующую ссылку:
+```
+[#zhfmsk](https://nixhax.github.io/zhf-21.11/index.en.html)
+```
+
 #### Что делать?
 
 1. Зайти в [последнюю сборку пакетов nixpkgs][trunk] или [последний прогон тестов NixOS][nixos tests];
